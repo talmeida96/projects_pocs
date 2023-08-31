@@ -1,16 +1,12 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-<h4 align="center"> 
-    :construction:  Projeto em construção  :construction:
-</h4>
+# :hammer: DESCRIÇÃO DA POC #
 
-## :hammer: DESCRIÇÃO DA POC ##
-
-# connect_mqtt() / on_connect:
+# Functions: connect_mqtt() / on_connect:
   - Conexão com o broker do Projeto;
-# on_message():
+# Function: on_message():
   - Recebe payload JSON via broker;
-# convert_to_table():
+# Functions: convert_to_table():
   - Transforma o payload e cria uma lista de armazenamento (payload_lst);
   - Cria DF para armazenamento final;
   - Cria DF temporário para normalizar os dados da lista + 'árvore' de sensores;
@@ -18,7 +14,8 @@
   - Concatena o DF temp + DF final ordenando as colunas
 
 
-## ENTRADA DO JSON ATRAVÉS DO BROKER ##
+# ENTRADA DO JSON ATRAVÉS DO BROKER #
+```json
 {
     "deviceid":"id-do-dispositivo",
     "fw_ver":"1",
@@ -36,10 +33,14 @@
                 }
             ]
         }
-    ]
+    ]   
 }
+```
 
-
-## SAÍDA DO DF PARA ARMAZENAMENTO NO DB ##
+# SAÍDA DO DF PARA ARMAZENAMENTO NO DB #
 deviceid            fw_ver          timestamp           sensor_code         sensor_mod_id           id_unit         value
 id-do-dispositivo   1               1693488129          code                1                       1               0.000
+
+deviceid | fw_ver | timestamp | sensor_code | sensor_mod_id | id_unit | value
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+id-do-dispositivo | 1 | 1693488129 | code | 1 | 2 | 0
