@@ -1,4 +1,11 @@
-*** DESCRIÇÃO DA POC ***
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
+<h4 align="center"> 
+    :construction:  Projeto em construção  :construction:
+</h4>
+
+## :hammer: DESCRIÇÃO DA POC ##
+
 # connect_mqtt() / on_connect:
   - Conexão com o broker do Projeto;
 # on_message():
@@ -11,7 +18,7 @@
   - Concatena o DF temp + DF final ordenando as colunas
 
 
-*** ENTRADA DO JSON ATRAVÉS DO BROKER ***
+## ENTRADA DO JSON ATRAVÉS DO BROKER ##
 {
     "deviceid":"id-do-dispositivo",
     "fw_ver":"1",
@@ -33,6 +40,6 @@
 }
 
 
-*** SAÍDA DO DF PARA ARMAZENAMENTO NO DB ***
+## SAÍDA DO DF PARA ARMAZENAMENTO NO DB ##
 deviceid            fw_ver          timestamp           sensor_code         sensor_mod_id           id_unit         value
 id-do-dispositivo   1               1693488129          code                1                       1               0.000
