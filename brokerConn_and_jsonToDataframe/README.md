@@ -4,8 +4,10 @@
 
 `Functions: connect_mqtt() / on_connect:`
   - Conexão com o broker do Projeto;
+
 `Function: on_message():`
   - Recebe payload JSON via broker;
+
 `Functions: convert_to_table():`
   - Transforma o payload e cria uma lista de armazenamento (payload_lst);
   - Cria DF para armazenamento final;
