@@ -41,6 +41,12 @@
 deviceid            fw_ver          timestamp           sensor_code         sensor_mod_id           id_unit         value
 id-do-dispositivo   1               1693488129          code                1                       1               0.000
 
-deviceid | fw_ver | timestamp | sensor_code | sensor_mod_id | id_unit | value
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-id-do-dispositivo | 1 | 1693488129 | code | 1 | 2 | 0
+| deviceid          |  fw_ver  | timestamp  |
+|:------------------|:--------:|-----------:|
+| id-do-dispositivo | **1**    | 1693488129 |
+
+| Left |  Center  | Right |
+|:-----|:--------:|------:|
+| L0   | **bold** | $1600 |
+| L1   |  `code`  |   $12 |
+| L2   | _italic_ |    $1 |
